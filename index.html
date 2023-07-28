@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sports template</title>
+<style>
+
+*{
+	margin:0;
+	padding:0;
+}
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('fonts/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.main{
+	width:100%;
+	height:auto;
+}
+.index{
+	width:1900px;
+	height:auto;
+	margin:auto;
+}
+.header{
+	width:100%;
+	height:1081px;
+	background:url(images/header-image.jpg) no-repeat top 55% left 85%, url(images/texture.png) no-repeat center bottom; 
+	background-color:#0101a3;
+}
+.top{
+	width:100%;
+	height:100px;
+}
+.top img{
+	padding:45px 0 0 65px;
+	float:left;
+}
+.nav-bar{
+	width:auto;	
+	height:auto;
+	background-color:;
+	float:left;
+	margin:45px 0 0 1000px;
+}
+.top ul{
+	list-style-type:none;
+	display:inline;
+}
+.top ul li{
+	display:inline;
+    font-family: 'bebas_neuebold';
+	font-size:25px;
+	padding:0 0 0 50px;
+	color:#fff;
+}
+.top ul li a:link, .top ul li a:visited{
+	display:inline;
+	font-size:25px;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:0 0 0 30px;
+	color:#fff;
+}
+.top ul li a:hover{
+	display:inline;
+	font-size:25px;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:0 0 0 30px;
+	color:red;
+}
+.header h1{
+    font-family: 'bebas_neuebold';
+	letter-spacing:10px;
+	font-size:80px;
+	color:#fff;
+	text-transform:uppercase;
+	padding:145px 0 0 300px;
+}
+.header h3{
+    font-family: 'bebas_neuebold';
+	font-size:35px;
+	color:#e92bde;
+	text-transform:uppercase;
+	padding:50px 0 0 300px;
+}
+.header p{
+	font-size:35px;
+    font-family: 'bebas_neuebold';
+	color:#fff;
+	text-transform:uppercase;
+	padding:40px 0 60px 300px;
+}
+.header span a{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	background-color:#e92bde;
+	margin:80px 0 0 300px;
+}
+.header span a:link, .header span a:visited{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#e92bde;
+}
+.header span a:hover{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#8c0a9a;
+	transition:1s;
+}
+.team{
+	width:100%;
+	height:934px;
+	background:url(images/texture.png) no-repeat center bottom; 
+	background-color:#0101a3;
+}
+.team h1{
+    font-family: 'bebas_neuebold';
+	font-size:90px;
+	text-align:center;
+	color:#fff;
+	padding:90px 0 0 0;
+	text-transform:uppercase;	
+}
+.team-left{
+	width:276px;
+	height:auto;
+	background-color:;
+	margin:90px 0 0 330px;
+	float:left;
+}
+.team-left h3{
+    font-family: 'bebas_neuebold';
+	font-size:30px;
+	color:#fff;
+	text-align:center;
+	padding:40px 0 0 0;
+}
+.team-left p{
+    font-family: 'bebas_neuebold';
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+	padding:20px 0 0 0;
+}
+.team-center{
+	width:276px;
+	height:auto;
+	background-color:;
+	margin:90px 0 0 208px;
+	float:left;
+}
+.team-center h3{
+    font-family: 'bebas_neuebold';
+	font-size:30px;
+	color:#fff;
+	text-align:center;
+	padding:40px 0 0 0;
+}
+.team-center p{
+    font-family: 'bebas_neuebold';
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+	padding:20px 0 0 0;
+}
+.team-right{
+	width:276px;
+	height:auto;
+	background-color:;
+	margin:90px 0 0 208px;
+	float:left;
+}
+.team-right h3{
+    font-family: 'bebas_neuebold';
+	font-size:30px;
+	color:#fff;
+	text-align:center;
+	padding:40px 0 0 0;
+}
+.team-right p{
+    font-family: 'bebas_neuebold';
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+	padding:20px 0 0 0;
+}
+.about{
+	width:100%;
+	height:1000px;
+	background:url(images/about-img.png) no-repeat top 75% left 50%;
+	background-color:#0101a3;
+}
+.about h1{
+    font-family: 'bebas_neuebold';
+	font-size:90px;
+	text-align:center;
+	color:#fff;
+	padding:90px 0 0 0;
+	text-transform:uppercase;	
+}
+.about p{
+    font-family: 'bebas_neuebold';
+	font-size:40px;
+	color:#fff;
+	text-align:center;
+	padding:30px 0 630px 0;
+}
+.about a{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	background-color:#e92bde;
+	margin:0 0 0 850px;
+}
+.about a:link, .about a:visited{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#e92bde;
+}
+.about a:hover{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#8c0a9a;
+	transition:0.5s;
+}
+.compete{
+	width:100%;
+	height:820px;
+	background:url(images/compete.png) no-repeat top 75% left 20%;
+	background-color:#0101a3;
+}
+.compete h2{
+    font-family: 'bebas_neuebold';
+	font-size:60px;
+	color:#fff;
+	padding:270px 0 0 1320px;
+	text-transform:uppercase;	
+}
+.compete p{
+    font-family: 'bebas_neuebold';
+	text-align:right;
+	font-size:30px;
+	color:#fff;
+	padding:40px 0 60px 1250px;
+	margin:0 260px 0 0;
+}
+.compete a{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	background-color:#e92bde;
+	margin:0 0 0 1410px;
+}
+.compete a:link, .compete a:visited{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#e92bde;
+}
+.compete a:hover{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#8c0a9a;
+	transition:0.5s;
+}
+.training{
+	width:100%;
+	height:984px;
+	background:url(images/header-image.jpg) no-repeat top 55% left 80%;
+	background-color:#0101a3;
+}
+.training h2{
+    font-family: 'bebas_neuebold';
+	font-size:60px;
+	color:#fff;
+	padding:300px 0 0 250px;
+	text-transform:uppercase;	
+}
+.training p{
+	font-size:30px;
+    font-family: 'bebas_neuebold';
+	color:#fff;
+	text-align:left;
+	padding:40px 0 60px 250px;
+}
+.training a{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	background-color:#e92bde;
+	margin:0 0 0 250px;
+}
+.training a:link, .training a:visited{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#e92bde;
+}
+.training a:hover{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#8c0a9a;
+	transition:0.5s;
+}
+.blog{
+	width:100%;
+	height:790px;
+	background-color:#000086;
+}
+.blog h1{
+	font-size:90px;
+    font-family: 'bebas_neuebold';
+	color:#fff;
+	text-align:center;
+	padding:50px 0 0 0;
+	text-transform:uppercase;	
+}
+.blog1{
+	width:420px;
+	height:auto;
+	margin:70px 0 0 225px;
+	float:left;
+}
+.blog1 h3{
+    font-family: 'bebas_neuebold';
+	font-size:35px;
+	color:#fff;
+	text-align:left;
+	padding:30px 0 0 0;
+}
+.blog1 p{
+    font-family: 'bebas_neuebold';
+	font-size:25px;
+	color:#fff;
+	text-align:left;
+	padding:20px 0 60px 0;
+}
+.blog1 a{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	background-color:#e92bde;
+	margin:0 0 0 0;
+}
+.blog1 a:link, .blog1 a:visited{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#e92bde;
+}
+.blog1 a:hover{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#8c0a9a;
+	transition:0.5s;
+}
+.blog2{
+	width:420px;
+	height:auto;
+	margin:70px 0 0 100px;
+	float:left;
+}
+.blog2 h3{
+	font-size:35px;
+    font-family: 'bebas_neuebold';
+	color:#fff;
+	text-align:left;
+	padding:30px 0 0 0;
+}
+.blog2 p{
+	font-size:25px;
+    font-family: 'bebas_neuebold';
+	color:#fff;
+	text-align:left;
+	padding:20px 0 60px 0;
+}
+.blog2 a{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	background-color:#e92bde;
+	margin:0 0 0 0;
+}
+.blog2 a:link, .blog2 a:visited{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#e92bde;
+}
+.blog2 a:hover{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#8c0a9a;
+	transition:0.5s;
+}
+.blog3{
+	width:420px;
+	height:auto;
+	margin:70px 0 0 100px;
+	float:left;
+}
+.blog3 h3{
+	font-size:35px;
+	color:#fff;
+    font-family: 'bebas_neuebold';
+	text-align:left;
+	padding:30px 0 0 0;
+}
+.blog3 p{
+	font-size:25px;
+	color:#fff;
+    font-family: 'bebas_neuebold';
+	text-align:left;
+	padding:20px 0 60px 0;
+}
+.blog3 a{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	background-color:#e92bde;
+	margin:0 0 0 0;
+}
+.blog3 a:link, .blog3 a:visited{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#e92bde;
+}
+.blog3 a:hover{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#8c0a9a;
+	transition:0.5s;
+}
+.newsletter{
+	width:100%;
+	height:870px;
+	background-color:#0101a3;
+}
+.news{
+	width:900px;
+	height:auto;
+	float:left;
+}
+.news h2{
+    font-family: 'bebas_neuebold';
+	font-size:80px;
+	color:#fff;
+	text-transform:uppercase;
+	padding:280px 0 0 250px;
+}
+.news p{
+	font-size:35px;
+    font-family: 'bebas_neuebold';
+	color:#fff;
+	text-align:left;
+	padding:50px 0 80px 250px;
+}
+.news a{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	background-color:#e92bde;
+	margin:0 0 0 250px;	
+}
+.news a:link, .news a:visited{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#e92bde;
+}
+.news a:hover{
+	width:auto;	
+	height:auto;
+	font-size:20px;
+	color:#fff;
+	text-transform:uppercase;
+	border:1px solid #e92bde;
+	padding:20px 50px 20px 50px;
+	text-decoration:none;
+	background-color:#8c0a9a;
+	transition:0.5s;
+}
+.form{
+	width:579px;
+	height:621px;
+	background-color:#e92bde;
+	float:left;
+	margin:167px 0 0 200px;
+}
+.form h3{
+	font-size:40px;
+	color:#fff;
+	text-transform:uppercase;
+	padding:20px 0 0 20px;
+}
+::placeholder{
+	color:#fff;
+}
+.form input[type="name"]{
+	outline:none;
+	width:211px;
+	height:36px;
+	border:2px solid #fff;
+	background-color:#e92bde;
+	color:#fff;
+	padding:0 0 0 15px;
+	margin:35px 0 0 25px;
+	float:left;
+}
+.form input[type="surname"]{
+	outline:none;
+	width:211px;
+	height:36px;
+	border:2px solid #fff;
+	background-color:#e92bde;
+	color:#fff;
+	padding:0 0 0 15px;
+	margin:35px 0 0 35px;
+}
+.form input[type="email"]{
+	outline:none;
+	width:475px;
+	height:36px;
+	border:2px solid #fff;
+	background-color:#e92bde;
+	color:#fff;
+	padding:0 0 0 15px;
+	margin:40px 0 0 25px;
+}
+.form input[type="message"]{
+	outline:none;
+	width:475px;
+	height:36px;
+	border:2px solid #fff;
+	background-color:#e92bde;
+	color:#fff;
+	padding:0 0 230px 15px;
+	margin:40px 0 0 25px;
+}
+.box{
+	width:25px;	
+	height:25px;
+	border:2px solid #fff;
+	margin:30px 0 0 25px;
+}
+.form p{
+	font-size:10px;
+	color:#fff;
+	text-align:left;
+	padding:0 0 0 120px;
+}
+
+.map{
+	width:100%;
+	height:957px;
+	background-color:#0101a3;
+}
+.map h1{
+    font-family: 'bebas_neuebold';
+	font-size:90px;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center;
+	padding:70px 0 0 0;
+}
+.map a img{
+	padding:70px 0 0 350px;
+}
+.map p{
+	font-size:30px;
+    font-family: 'bebas_neuebold';
+	color:#fff;
+	padding:40px 0 0 670px;
+}
+.footer{
+	width:100%;
+	height:589px;
+	background:url(images/texture2.png) no-repeat center; 
+	background-color:#0101a3;
+}
+.footer-left img{
+	padding:0 0 30px 90px;
+}
+.foot-left{
+	width:200px;
+	height:auto;
+	background-color:;
+	margin:62px 0 0 90px;
+	float:left;
+}
+.foot-left ul {
+	padding:50px 0 80px 0;
+}
+.foot-left ul li{
+	list-style-type:none;
+    font-family: 'bebas_neuebold';
+	font-size:25px;
+	color:#fff;
+	padding:35px 0 0 0;
+}
+.foot-right{
+	width:200px;
+	height:auto;
+	background-color:;
+	margin:150px 0 0 90px;
+	float:left;
+}
+.foot-right ul li{
+	list-style-type:none;
+    font-family: 'bebas_neuebold';
+	font-size:25px;
+	color:#fff;
+	padding:35px 0 0 0;
+}
+.footer hr{
+	width:100%;
+}
+.footer h3{
+	color:#fff;
+    font-family: 'bebas_neuebold';
+	font-size:25px;
+	padding:40px 0 0 85px;
+	float:left;
+}
+.footer a:link, .footer a:visited{
+	color:#fff;
+	text-decoration:none;
+}
+.image{
+	width:600px;
+	height:auto;
+	margin:0 0 0 1240px;
+}
+.footer a img{
+	margin:35px 0 0 80px;
+}
+
+</style>
+</head>
+<body>
+<div class="main">
+	<div class="index">
+		<div class="header">
+			<div class="top">
+				<img src="images/logo.png" alt="">
+				<div class="nav-bar">
+					<ul>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">Competition</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr size=15px color=#e92bde>
+			<h1>Discover the<br><hr size=18px color=#e92bde width="28%">New sports<br><hr size=18px color=#e92bde width="24%">online<hr size=18px color=#e92bde width="13%"></h1>
+			<h3>13 - 14 June Online Event</h3>
+			<p>Lorem ipsum dolor sit<br>amet, conse ctettur alit.sed</p>
+			<span><a href="#">Read More</a></span>
+		</div>
+
+		<div class="team">
+			<h1>Our Team</h1>
+			<div class="team-left">
+				<img src="images/team-left.png" alt="">
+				<h3>Lorem ipsum dolor<br>sit amet,</h3>
+				<p>Lorem ipsum dolor sit<br>amet, consectetur<br>adipisicing elit, sed do</p>
+			</div>
+
+			<div class="team-center">
+				<img src="images/team-center.png" alt="">
+				<h3>Lorem ipsum dolor<br>sit amet,</h3>
+				<p>Lorem ipsum dolor sit<br>amet, consectetur<br>adipisicing elit, sed do</p>
+			</div>
+
+			<div class="team-right">
+				<img src="images/team-right.png" alt="">
+				<h3>Lorem ipsum dolor<br>sit amet,</h3>
+				<p>Lorem ipsum dolor sit<br>amet, consectetur<br>adipisicing elit, sed do</p>
+			</div>
+		</div>
+
+		<div class="about">
+			<h1>About us</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+			<a href="#">Read More</a>
+		</div>
+
+		<div class="compete">
+			<h2>Compete with us</h2>
+			<p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod tempor incididunt ut<br>labore et dolore magna aliqua. Ut<br>enim minim veniam quis noistrud</p>
+			<a href="#">Contact us</a>
+		</div>
+
+		<div class="training">
+			<h2>our<br>training</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna<br>aliqua. Ut enim ad minim</p>
+			<a href="#">Read more</a>
+		</div>
+
+		<div class="blog">
+			<h1>Blog</h1>
+			<div class="blog1">
+				<img src="images/blog1.jpg" alt="">
+				<h3>Lorem ipsum dolor sit amet<br>consectetur adipisicing</h3>
+				<p>Lorem ipsum dolor sit amet, consectetu adipisicing elit, sed do eiusmod tempor</p>
+				<a href="#">Read more</a>
+			</div>
+
+			<div class="blog2">
+				<img src="images/blog2.jpg" alt="">
+				<h3>Lorem ipsum dolor sit amet<br>consectetur adipisicing</h3>
+				<p>Lorem ipsum dolor sit amet, consectetu adipisicing elit, sed do eiusmod tempor</p>
+				<a href="#">Read more</a>
+			</div>
+
+			<div class="blog3">
+				<img src="images/blog3.jpg" alt="">
+				<h3>Lorem ipsum dolor sit amet<br>consectetur adipisicing</h3>
+				<p>Lorem ipsum dolor sit amet, consectetu adipisicing elit, sed do eiusmod tempor</p>
+				<a href="#">Read more</a>
+			</div>
+		</div>
+
+		<div class="newsletter">
+			<div class="news">
+				<h2>Newsletter</h2>
+				<p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit, sed do<br>eiusmod tempor incididunt ut labore et<br>dolore magna aliqua. Ut enim ad minim</p>
+				<a href="#">Send</a>
+			</div>
+			<div class="form">
+				<h3>Contact us</h3>
+				<input type="name" placeholder="Name" name="name">
+				<input type="surname" placeholder="Surname" name="last name">
+				<input type="email" placeholder="Email" name="email">
+				<input type="message" placeholder="Your Message" name="message">
+				<div class="box">&nbsp;</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+			</div>
+		</div>
+
+		<div class="map">
+			<h1>Contact us</h1>
+			<a href="#"><img src="images/map.jpg" alt=""></a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing<br>elit, sed do eiusmod tempor incididunt ut labore et 
+		</div>
+
+		<div class="footer">
+			
+			<div class="foot-left">
+				<img src="images/logo2.png" alt="">
+				<ul>
+					<li>Team</li>
+					<li>Competition</li>
+					<li>About us</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+
+			<div class="foot-right">
+				<ul>
+					<li>Faqs</li>
+					<li>Politicy Privacy</li>
+					<li>Cookies</li>
+				</ul>
+			</div>
+
+			<hr size=15px color=#e92bde>
+			<h3>Copyright | YourName</h3>
+			<div class="image">
+				<a href="#"><img src="images/insta.png" alt="">&nbsp; &nbsp;@yourname</a>
+				<a href="#"><img src="images/facebook.png" alt="">&nbsp; &nbsp;@yourname</a>
+				<a href="#"><img src="images/twitter.png" alt="">&nbsp; &nbsp;@yourname</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
